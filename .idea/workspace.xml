@@ -4,24 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a0107c11-3ffe-494f-a5ee-01a8d45c3b35" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/test/java/requests/CreateBookingRequestBody.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/requests/UpdateBookingRequestBody.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/responces/BookingData.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/responces/Bookingdates.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/responces/CreateBookingResponce.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/responces/GetBookingResponceData.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/responces/LoginBody.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/responces/UpdateBookingSecondResponce.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/tests/RestAssuredTests.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/JsonAllEmployeesSchema.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/regression.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/CreateEmpoyeeBody.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/ResponceDataId.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/responces/LoginResponse.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/ResponseEmployeeBody.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/responces/UpdateBookingFirstResponce.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/RestAssuredTests.java" beforeDir="false" />
-    </list>
+    <list default="true" id="a0107c11-3ffe-494f-a5ee-01a8d45c3b35" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
