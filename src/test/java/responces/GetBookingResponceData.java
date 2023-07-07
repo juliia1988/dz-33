@@ -14,5 +14,4 @@ public class GetBookingResponceData {
     private Boolean depositpaid;
     private Bookingdates bookingdates;
     private String additionalneeds;
-
 }

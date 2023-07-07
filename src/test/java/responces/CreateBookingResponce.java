@@ -1,7 +1,6 @@
 package responces;
 import lombok.*;
 
-
 @Getter
 @Setter
 @NoArgsConstructor

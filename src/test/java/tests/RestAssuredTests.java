@@ -6,13 +6,11 @@ import io.qameta.allure.Step;
 import io.restassured.RestAssured;
 import io.restassured.builder.RequestSpecBuilder;
 import io.restassured.response.Response;
+import org.joda.time.LocalDate;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 import requests.CreateBookingRequestBody;
 import responces.*;
-import java.text.ParseException;
-import java.text.SimpleDateFormat;
-import java.util.Date;
 import java.util.concurrent.ThreadLocalRandom;
 
 public class RestAssuredTests {
@@ -65,32 +63,16 @@ public class RestAssuredTests {
     @JsonIgnoreProperties(ignoreUnknown = true)
     public Number createBooking() {
 
-        Date dateFrom;
-        SimpleDateFormat DateFor = new SimpleDateFormat("yyyy-MM-dd");
-        try {
-            dateFrom = DateFor.parse("2020-07-10");
-        } catch (ParseException e) {
-            throw new RuntimeException(e);
-        }
-
-        Date dateTo;
-        SimpleDateFormat DateTo = new SimpleDateFormat("yyyy-MM-dd");
-        try {
-            dateTo = DateTo.parse("20220-07-10");
-        } catch (ParseException e) {
-            throw new RuntimeException(e);
-        }
-
         CreateBookingRequestBody body = new CreateBookingRequestBody().builder()
                 .firstname("Yuliia")
                 .lastname("Sokolova")
                 .totalprice(111)
                 .depositpaid(true)
                 .bookingdates(Bookingdates.builder().build().builder()
-                        .checkin(dateFrom)
-                        .checkout(dateTo)
+                        .checkin(LocalDate.parse("2022-04-01").toDate())
+                        .checkout(LocalDate.parse("2022-04-01").toDate())
                         .build())
-                .additionalneeds("Additional text")
+                .additionalneeds("Additional text 2")
                 .build();
 
         Response response = RestAssured.given()
@@ -149,16 +131,14 @@ public class RestAssuredTests {
                 .addCookie("token", token)
                 .build();
 
-        Date dateFrom = null;
-        Date dateTo = null;
         UpdateBookingSecondResponce bodyForSecondUpdate = new UpdateBookingSecondResponce().builder()
                 .firstname("Yuliia")
                 .lastname("Sokolova")
                 .totalprice(876756)
                 .depositpaid(false)
                 .bookingdates(Bookingdates.builder()
-                        .checkin(dateFrom)
-                        .checkout(dateTo)
+                        .checkin(LocalDate.parse("2022-04-01").toDate())
+                        .checkout(LocalDate.parse("2022-04-01").toDate())
                         .build())
                 .additionalneeds("Additional text")
                 .build();

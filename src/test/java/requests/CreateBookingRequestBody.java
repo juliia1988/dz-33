@@ -9,6 +9,7 @@ import responces.Bookingdates;
 @NoArgsConstructor
 @AllArgsConstructor
 @Builder
+@JsonIgnoreProperties(ignoreUnknown = true)
 public class CreateBookingRequestBody {
 
     private String firstname;

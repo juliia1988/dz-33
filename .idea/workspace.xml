@@ -4,7 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a0107c11-3ffe-494f-a5ee-01a8d45c3b35" name="Changes" comment="" />
+    <list default="true" id="a0107c11-3ffe-494f-a5ee-01a8d45c3b35" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/requests/CreateBookingRequestBody.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/requests/CreateBookingRequestBody.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/requests/UpdateBookingRequestBody.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/requests/UpdateBookingRequestBody.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/responces/BookingData.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/responces/BookingData.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/responces/Bookingdates.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/responces/Bookingdates.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/responces/CreateBookingResponce.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/responces/CreateBookingResponce.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/responces/GetBookingResponceData.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/responces/GetBookingResponceData.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/tests/RestAssuredTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/RestAssuredTests.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -71,7 +80,7 @@
       <command value="mvn clean test" />
     </option>
   </component>
-  <component name="RunManager" selected="TestNG.RestAssuredTests.getAllBookings">
+  <component name="RunManager" selected="TestNG.RestAssuredTests.checkThatBookingWasCreated">
     <configuration name="RestAssuredTests" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="dz-33" />
       <extension name="coverage">
@@ -151,8 +160,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="TestNG.RestAssuredTests.getAllBookings" />
         <item itemvalue="TestNG.RestAssuredTests.checkThatBookingWasCreated" />
+        <item itemvalue="TestNG.RestAssuredTests.getAllBookings" />
         <item itemvalue="TestNG.RestAssuredTests" />
         <item itemvalue="TestNG.RestAssuredTests.DeleteCreatedBooking" />
         <item itemvalue="TestNG.RestAssuredTests.UpdateSecondBooking" />
@@ -181,7 +190,21 @@
       </map>
     </option>
   </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/tests/RestAssuredTests.java</url>
+          <line>115</line>
+          <option name="timeStamp" value="42" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/dz_33$RestAssuredTests_checkThatBookingWasCreated.ic" NAME="RestAssuredTests.checkThatBookingWasCreated Coverage Results" MODIFIED="1688723884301" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>tests.*</FILTER>
+    </SUITE>
     <SUITE FILE_PATH="coverage/dz_33$RestAssuredTests_getBookingIds.ic" NAME="RestAssuredTests.getBookingIds Coverage Results" MODIFIED="1688670190642" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
   </component>
 </project>
