@@ -10,6 +10,7 @@ import lombok.*;
 @Builder
 @JsonIgnoreProperties(ignoreUnknown = true)
 public class UpdateBookingSecondResponce {
+
     private String firstname;
     private String lastname;
     private Number totalprice;
