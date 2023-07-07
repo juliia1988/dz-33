@@ -1,7 +1,5 @@
 package responces;
-
 import lombok.*;
-
 @Getter
 @Setter
 @NoArgsConstructor
@@ -9,7 +7,6 @@ import lombok.*;
 @Builder
 
 public class LoginResponse {
-
     private String token;
 
 }

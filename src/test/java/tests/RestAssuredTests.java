@@ -52,7 +52,6 @@ public class RestAssuredTests {
         Object BookingId = response.jsonPath().getList("bookingid").get(randomNum);
         return BookingId;
     }
-
     @Test
     @Description("Check Get All Bookings")
     public void getAllBookings() {
@@ -60,7 +59,6 @@ public class RestAssuredTests {
         response.jsonPath().getList("bookingid");
         response.prettyPrint();
     }
-
 
     @Step("Create new Booking")
     @Description("Create new Booking")
@@ -112,7 +110,6 @@ public class RestAssuredTests {
         response.as(GetBookingResponceData.class);
         response.prettyPrint();
     }
-
 
     @Test
     @Description("Update random Booking with PATCH")
