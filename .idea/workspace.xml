@@ -5,16 +5,34 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a0107c11-3ffe-494f-a5ee-01a8d45c3b35" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/test/java/CreateEmpoyeeBody.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/ResponceDataId.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/ResponseEmployeeBody.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/RestAssuredTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/requests/CreateBookingRequestBody.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/requests/UpdateBookingRequestBody.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/responces/BookingData.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/responces/Bookingdates.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/responces/CreateBookingResponce.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/responces/GetBookingResponceData.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/responces/LoginBody.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/responces/UpdateBookingSecondResponce.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/tests/RestAssuredTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/JsonAllEmployeesSchema.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/regression.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/CreateEmpoyeeBody.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/ResponceDataId.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/responces/LoginResponse.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/ResponseEmployeeBody.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/responces/UpdateBookingFirstResponce.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/RestAssuredTests.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
@@ -23,6 +41,10 @@
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="jar://$USER_HOME$/Library/Java/JavaVirtualMachines/openjdk-19.0.2/Contents/Home/lib/src.zip!/java.base/java/lang/Integer.java" root0="SKIP_INSPECTION" />
+    <setting file="jar://$USER_HOME$/Library/Java/JavaVirtualMachines/openjdk-19.0.2/Contents/Home/lib/src.zip!/java.base/java/util/ArrayList.java" root0="SKIP_INSPECTION" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -44,16 +66,115 @@
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "last_opened_file_path": "/Users/olenavoloshyna/IdeaProjects/dz-33/src/test"
+    "last_opened_file_path": "/Users/olenavoloshyna/IdeaProjects/dz-33/src/test/resources"
   }
 }]]></component>
   <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="" />
+      <recent name="date" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/test/resources" />
       <recent name="$PROJECT_DIR$/src/test" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/test/java" />
     </key>
+  </component>
+  <component name="RunAnythingCache">
+    <option name="myCommands">
+      <command value="mvn clean" />
+      <command value="mvn clean test" />
+    </option>
+  </component>
+  <component name="RunManager" selected="TestNG.RestAssuredTests.getAllBookings">
+    <configuration name="RestAssuredTests" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="dz-33" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="tests" />
+      <option name="MAIN_CLASS_NAME" value="tests.RestAssuredTests" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="RestAssuredTests.DeleteCreatedBooking" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="dz-33" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="tests.RestAssuredTests" />
+      <option name="METHOD_NAME" value="DeleteCreatedBooking" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="RestAssuredTests.UpdateSecondBooking" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="dz-33" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="tests.RestAssuredTests" />
+      <option name="METHOD_NAME" value="UpdateSecondBooking" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="RestAssuredTests.checkThatBookingWasCreated" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="dz-33" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="tests" />
+      <option name="MAIN_CLASS_NAME" value="tests.RestAssuredTests" />
+      <option name="METHOD_NAME" value="checkThatBookingWasCreated" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="RestAssuredTests.getAllBookings" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="dz-33" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="tests" />
+      <option name="MAIN_CLASS_NAME" value="tests.RestAssuredTests" />
+      <option name="METHOD_NAME" value="getAllBookings" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="TestNG.RestAssuredTests.getAllBookings" />
+        <item itemvalue="TestNG.RestAssuredTests.checkThatBookingWasCreated" />
+        <item itemvalue="TestNG.RestAssuredTests" />
+        <item itemvalue="TestNG.RestAssuredTests.DeleteCreatedBooking" />
+        <item itemvalue="TestNG.RestAssuredTests.UpdateSecondBooking" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -65,5 +186,19 @@
       <updated>1688650542781</updated>
     </task>
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/dz_33$RestAssuredTests_getBookingIds.ic" NAME="RestAssuredTests.getBookingIds Coverage Results" MODIFIED="1688670190642" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
   </component>
 </project>

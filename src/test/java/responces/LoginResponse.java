@@ -1,3 +1,5 @@
+package responces;
+
 import lombok.*;
 
 @Getter
@@ -5,8 +7,9 @@ import lombok.*;
 @NoArgsConstructor
 @AllArgsConstructor
 @Builder
-public class ResponceDataId {
 
-    private Integer id;
+public class LoginResponse {
+
+    private String token;
 
 }

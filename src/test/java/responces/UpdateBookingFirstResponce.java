@@ -1,19 +1,16 @@
+package responces;
+
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import lombok.*;
-
 
 @Getter
 @Setter
 @NoArgsConstructor
 @AllArgsConstructor
 @Builder
+@JsonIgnoreProperties(ignoreUnknown = true)
+public class UpdateBookingFirstResponce {
 
-public class ResponseEmployeeBody {
-
-    private String status;
-
-    private ResponceDataId data;
-
-    private String message;
+    private Number totalprice;
 
 }
